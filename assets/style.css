@@ -1,19 +1,19 @@
 :root {
-    --lightshade: #F7F7EE;
-    --maincolor: #98B7E7;
-    --lightaccent: #C6C6E3;
-    --darkaccent: #9EA3EF;
-    --darkshade: #5E54EE;
+    --pastel-pink: #EA9FA4ff;
+    --dark-sea-green: #86AD8Bff;
+    --aero-blue: #C6E5D3ff;
+    --champagne: #F5E8CEff;
+    --light-coral: #E68584ff;
 }
 
 body {
-    background-color: var(--lightshade);
+    background-color: #F7F7EE;
 }
 
 /* header style start */
 header {
     padding: 5px 5px;
-    background-color: var(--maincolor);
+    background-color: var(--aero-blue);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,18 +22,17 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: var(--lightshade);
+    font-size: 50px;
+    color: var(--dark-sea-green);
 
 }
 
 header a {
-    text-decoration: none;
-    color: var(--lightshade);
+    color: var(--dark-sea-green);
 }
 
 header nav {
-margin: 15px 0px;
+margin: 20px 0px;
 }
 
 header nav ul {
@@ -45,18 +44,43 @@ header nav ul {
 }
 
 header nav ul a {
-    padding: 50px 15px;
+    padding: 60px 15px;
     font-weight: lighter;
-    font-size: large;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 header nav ul a:hover {
-    background: var(--darkshade);
-    color: var(--lightaccent);
+    background: var(--champagne);
+    color: var(--light-coral);
     border-radius: 15px;
-    font-size: larger;
+    font-size: 30px;
 
 }
+/* Header Style End */
+
+/* Hero Style Start */
+.hero {
+    background-image: url("./images/rainbowhero.png");
+    background-size: cover;
+    height: 350px;
+    background-position: left bottom;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    background-color: var(--champagne);
+    color: var(--light-coral);
+    font-size: 48px;
+    position: absolute;
+    right: 100px;
+    top: 360px;
+}
+/* Hero Style End */
 
 /* Start Image Boxes */
 .image-box{
@@ -66,15 +90,15 @@ header nav ul a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-    border: var(--maincolor) solid 10px;
+    border: var(--aero-blue) solid 10px;
 }
 
 .image-box h1 {
     position: absolute;
     bottom: 20px;
     padding: 5px 8px;
-    background-color: var(--maincolor);
-    color: var(--lightshade);
+    background-color: var(--dark-sea-green);
+    color: var(--champagne);
 }
 
 .box {
@@ -88,7 +112,7 @@ header nav ul a:hover {
     height: 500px;
     width: 45%;
     margin: 2.5%;
-    background-color: var(--darkaccent);
+    background-color: var(--dark-sea-green);
 }
 
 #special {
