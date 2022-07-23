@@ -12,12 +12,12 @@ body {
 
 /* header style start */
 header {
-    padding: 20 px 35 px;
+    padding: 5px 5px;
     background-color: var(--maincolor);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    top: 0;
+    top: 0px;
 }
 
 header h1 {
@@ -33,7 +33,7 @@ header a {
 }
 
 header nav {
-margin: 7px 0px;
+margin: 15px 0px;
 }
 
 header nav ul {
@@ -45,9 +45,17 @@ header nav ul {
 }
 
 header nav ul a {
-    padding: 40px 15px;
+    padding: 50px 15px;
     font-weight: lighter;
     font-size: large;
+}
+
+header nav ul a:hover {
+    background: var(--darkshade);
+    color: var(--lightaccent);
+    border-radius: 15px;
+    font-size: larger;
+
 }
 
 /* Start Image Boxes */
