@@ -1,0 +1,88 @@
+:root {
+    --lightshade: #F7F7EE;
+    --maincolor: #98B7E7;
+    --lightaccent: #C6C6E3;
+    --darkaccent: #9EA3EF;
+    --darkshade: #5E54EE;
+}
+
+body {
+    background-color: var(--lightshade);
+}
+
+/* header style start */
+header {
+    padding: 20 px 35 px;
+    background-color: var(--maincolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--lightshade);
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--lightshade);
+}
+
+header nav {
+margin: 7px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul a {
+    padding: 40px 15px;
+    font-weight: lighter;
+    font-size: large;
+}
+
+/* Start Image Boxes */
+.image-box{
+    background-image: url("./images/flipped-hero-image.jpeg");
+    min-height: 300px;
+    max-width: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: var(--maincolor) solid 10px;
+}
+
+.image-box h1 {
+    position: absolute;
+    bottom: 20px;
+    padding: 5px 8px;
+    background-color: var(--maincolor);
+    color: var(--lightshade);
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-item {
+    height: 500px;
+    width: 45%;
+    margin: 2.5%;
+    background-color: var(--darkaccent);
+}
+
+#special {
+    width: 95%;
+}
