@@ -72,16 +72,44 @@ header nav ul a:hover {
     background-attachment: fixed;
 }
 
-.hero h1 {
+.hero h2 {
     background-color: var(--champagne);
     color: var(--light-coral);
     font-size: 48px;
     position: absolute;
     right: 100px;
     top: 360px;
+    text-decoration: underline;
 }
 /* Hero Style End */
 
+/* About Me Style Start */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.body-section{
+    display: inline-block;
+    padding: 20px;
+}
+.section-title {
+    color: var(--dark-sea-green);
+    font-size: 30px;
+    width: 45%;
+    text-align: right;
+    padding: 20px;
+}
+
+.about-me-info {
+    color: var(--dark-sea-green);
+    width: 45%;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
 /* Start Image Boxes */
 .image-box{
     background-image: url("./images/flipped-hero-image.jpeg");
