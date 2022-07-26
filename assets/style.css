@@ -108,12 +108,32 @@ header nav ul a:hover {
     width: 70%;
     border-left: var(--light-coral) solid 5px;
     padding: 10px;
-
 }
 
 /* Start Image Boxes */
+
+.projects-display{
+}
+
+#image-box-1{
+    background-image: url(http://placekitten.com/300/450);
+    max-width: 70%;
+    height: 500px;
+}
+#image-box2{
+    background-image: url(http://placekitten.com/300);
+}
+#image-box3{
+    background-image: url(http://placekitten.com/500);
+}
+#image-box4{
+    background-image: url(http://placekitten.com/400);
+}
+#image-box5{
+    background-image: url(/assets/images/flipped-hero-image.jpeg);
+}
+
 .image-box{
-    background-image: url("./images/flipped-hero-image.jpeg");
     min-height: 300px;
     max-width: 450px;
     background-size: cover;
@@ -128,6 +148,20 @@ header nav ul a:hover {
     padding: 5px 8px;
     background-color: var(--dark-sea-green);
     color: var(--champagne);
+
+}
+
+
+
+/*
+.image-box{
+    background-image: url("./images/flipped-hero-image.jpeg");
+    min-height: 300px;
+    max-width: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: var(--aero-blue) solid 10px;
 }
 
 .box {
