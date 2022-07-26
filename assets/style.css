@@ -87,29 +87,30 @@ header nav ul a:hover {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 97%;
 }
 
 .body-section{
     display: inline-block;
-    padding: 20px;
+    padding: 20px, 5px, 20px, 20px;
 }
 .section-title {
     color: var(--dark-sea-green);
     font-size: 30px;
-    width: 45%;
+    width: 20%;
     text-align: right;
+    justify-content: flex-start;
     padding: 20px;
 }
 
 .about-me-info {
     color: var(--dark-sea-green);
-    width: 45%;
+    width: 70%;
+    border-left: var(--light-coral) solid 5px;
+    padding: 10px;
+
 }
 
-.flex-child:first-child {
-    margin-right: 20px;
-}
 /* Start Image Boxes */
 .image-box{
     background-image: url("./images/flipped-hero-image.jpeg");
