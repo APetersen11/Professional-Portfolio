@@ -54,8 +54,6 @@ header nav ul a:hover {
     background: var(--champagne);
     color: var(--light-coral);
     border-radius: 15px;
-    font-size: 30px;
-
 }
 /* Header Style End */
 
@@ -111,7 +109,6 @@ header nav ul a:hover {
 }
 
 /* Start Image Boxes */
-
 .projects-display{
 }
 
@@ -148,10 +145,38 @@ header nav ul a:hover {
     padding: 5px 8px;
     background-color: var(--dark-sea-green);
     color: var(--champagne);
-
 }
 
+/*Start Contact Me*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+}
+.contact-info{
+    color: var(--dark-sea-green);
+    width: 70%;
+    border-left: var(--light-coral) solid 5px;
+    padding: 10px;
+    font-size: 20px;
+}
 
+.contact-info img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.contact-info a{
+    color: var(--dark-sea-green);
+}
+
+.contact-info a:hover{
+    background: var(--champagne);
+    color: var(--light-coral);
+    border-radius: 15px;
+}
 
 /*
 .image-box{
