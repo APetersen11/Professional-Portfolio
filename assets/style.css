@@ -18,6 +18,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     top: 0px;
+    align-items: center;
 }
 
 header h1 {
@@ -41,6 +42,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 header nav ul a {
@@ -85,7 +87,8 @@ header nav ul a:hover {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    width: 97%;
+    width: 95%;
+    margin: 40px auto;
 }
 
 .body-section{
@@ -98,7 +101,7 @@ header nav ul a:hover {
     width: 20%;
     text-align: right;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 15px;
 }
 
 .about-me-info {
@@ -106,15 +109,48 @@ header nav ul a:hover {
     width: 70%;
     border-left: var(--light-coral) solid 5px;
     padding: 10px;
+    margin: 0;
+    padding: 40px;
 }
 
 /* Start Image Boxes */
-.projects-display{
+
+.projects-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
+
+#body-section-title{
+    min-width: 20%;
+}
+
+.projects-display {
+    min-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-left: var(--light-coral) solid 5px;
+}
+
+.projects-display a:first-child {
+    min-width: 90%;
+}
+
+.projects-display a {
+    min-height: 300px;
+    min-width: 45%;
+
+}
+
+
 
 #image-box-1{
     background-image: url(http://placekitten.com/300/450);
-    max-width: 70%;
+    max-width: 100%;
     height: 500px;
 }
 #image-box2{
@@ -127,12 +163,12 @@ header nav ul a:hover {
     background-image: url(http://placekitten.com/400);
 }
 #image-box5{
-    background-image: url(/assets/images/flipped-hero-image.jpeg);
+    background-image: url(./images/flipped-hero-image.jpeg);
 }
 
 .image-box{
     min-height: 300px;
-    max-width: 450px;
+    min-width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -151,9 +187,12 @@ header nav ul a:hover {
 .contact{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+
     top: 0px;
+    width: 95%;
+    margin: auto;
 }
 .contact-info{
     color: var(--dark-sea-green);
@@ -161,11 +200,21 @@ header nav ul a:hover {
     border-left: var(--light-coral) solid 5px;
     padding: 10px;
     font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contact-info img{
     max-width: 100px;
     max-height: 100px;
+    padding: 8px;
+}
+
+.contact-info p {
+    padding: 8px;
 }
 
 .contact-info a{
@@ -177,6 +226,64 @@ header nav ul a:hover {
     color: var(--light-coral);
     border-radius: 15px;
 }
+
+@media screen and (max-width: 980px) {
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .about-me, .contact {
+        flex-direction: column;
+    }
+
+    .about-me-info, .contact-info, .projects-display {
+        width: 95%;
+        border-top: var(--light-coral) solid 5px;
+        border-left: none;
+        padding: 10px;
+    }
+
+    .section-title{
+        width: 95%;
+        text-align: center;
+    }
+}
+
+/* @media screen and (max-width: 725px) {
+
+} */
+    
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+section {
+    padding: 30px 15px;
+}
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px){
+
+}
+
 
 /*
 .image-box{
